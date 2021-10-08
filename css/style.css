@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Neucha&family=Satisfy&family=Style+Script&display=swap');
+/* font-family: 'Lobster Two', cursive;
+font-family: 'Style Script', cursive;
+font-family: 'Neucha', cursive;
+font-family: 'Satisfy', cursive; */
+
+* {
+  margin: 0;
+  padding: auto;
+}
+body {
+  font-family: 'Marvel', sans-serif;
+  background-color: #EFF7F6;
+}
+/* Pagina de Inicio */
+/* Parte izquierda de la pagina de inicio*/
+.text-welcome{
+  font-family: 'Lobster Two', cursive;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ibook-img{
+  margin: 20px 20px 20px 20px;
+  filter: drop-shadow(2px 4px 8px #abb4b4);
+}
+
+p.text-text {
+  height: 17px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Lobster Two', cursive;
+  padding: 10px 10px 0px;
+}
+
+/* Parte derecha de la pagina de incio */
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contenedorSignUp, #contenedorSignIn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 100px;
+}
+
+img.logo-ibook {
+  margin: 20px 0px 10px;
+}
+
+.registro {
+  width: 200px;
+  height: 37px;
+  margin: 8px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  outline: none;
+  padding: 1.2px;
+}
+
+/* Boton de inicio y registro */
+.registro-signin, .registro-signUp {
+  width: 138px;
+  height: 42px;
+  color: white;
+  background-color: #E01E37;
+  border: 1px solid #E01E37;
+  border-radius: 6px;
+  margin: 10px ;
+}
+
+/* mensaje de error en signIn */
+.error-message {
+  color: #E01E37;
+  font-weight: bold;
+  margin: 5px 0px 5px;
+}
+
+a.btn-register, a.btn-forget {
+  color:  blue;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.text-login {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* botones de google y facebook  */
+.button {
+  border: none;
+  background: none;
+}
+
+.btn-fb-google {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+/* .fab {
+  font-weight: 400;
+  font-size: 35px;
+  font-style: normal;
+  color: blue;
+  cursor: pointer;
+}
+
+.fa-google:before {
+  content: "\f1a0";
+  color: red;
+  cursor: pointer;
+} */
+
+/* HOME */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #84A59D;
+  font-family: 'Lobster Two', cursive;
+  font-size: 28px;
+  font-weight: bolder;
+  height: 70px;
+  width: 100%;
+}
+
+.nav-bar li{
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-bar li:hover{
+  border-color: solid 1em black;
+  font-family: 'Lobster Two', cursive;
+  font-weight: bolder;
+  font-size: 32px;
+  cursor:pointer;
+}
+
+.nav-bar li a{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 29px;
+  align-items: center;
+  font-family: 'Lobster Two', cursive;
+  color: black;
+  display: flex;
+}
+
+.container-perfil {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/* Contenedor de Perfil de usuario, cuantos libros lees? */
+.img-profile {
+  width: 100%;
+}
+
+.user-perfil {
+  width: 270px;
+  height: 400px;
+  background: lightgray;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.img-perfil {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.texts {
+  margin-left: 10px;
+}
+
+.email-perfil {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px 10px;
+}
+
+.text-phrase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px 10px;
+}
+
+/* Post para publicar */
+
+.textArea-comment {
+  resize: none;
+  font-family: 'Marvel', sans-serif;
+  text-decoration-color: black;
+  font-size: 16px;
+  background-color:lightcyan;
+  width: 390px;
+  height: 45px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  text-align: justify;
+}
+
+.img-perfil2, .img-perfil3  {
+  width: 96px;
+  border-radius: 50%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.content-post {
+  display: flex;
+  width: 600px;
+  border: none;
+  background: lightgray;
+  border-radius: 5px;
+  height: 140px;
+  margin: 20px;
+}
+
+.btn-share {
+  width: 138px;
+  height: 30px;
+  color: white;
+  background-color: #E01E37;
+  border: 1px solid #E01E37;
+  border-radius: 6px;
+  margin: 5px ;
+}
+
+/* Post ya publicados */
+.section-post {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 200px;
+  border: none;
+  background: lightgray;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.content-posts {
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+}
+
+.textarea-post {
+  resize: none;
+  font-family: 'Marvel', sans-serif;
+  font-size: 15px;
+  color: black;
+  background-color:lightcyan;
+  width: 390px;
+  height: 45px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  text-align: justify;
+}
+
+.only-flex, .display-name, .date-publication {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  font-family: 'Marvel', sans-serif;
+  background-color: #84A59D;
+  border-radius: 5px;
+}
+
+.button-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 30px 0px 15px;
+}
+
+.form-save {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botones, .hide {
+  font-size: 18px;
+  background: none;
+  border: none;
+}
+
+/* .comment-form {
+  display: flex;
+}
+
+.textarea-comment{
+  resize: none;
+  background: darkgray;
+  border: darkgray;
+} */
+
+.ul-parent {
+  padding-left: 0px;
+}
+
+.li-child {
+  list-style: none;
+  margin: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* .only-flex {
+  display: flex;
+} */
+
+.btn-select {
+  border: none;
+  color: #565454;
+  width: min-content;
+  cursor: pointer;
+  background: transparent;
+  font-family: 'Marvel', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.btn-select select option {
+  padding: 20px;
+}
+
+.date-publication{
+  margin-right: 20px;
+  color:black;
+}
+
+.hide {
+  display: none !important;
+}
+
+.middle-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-bottom-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-class {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-post {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* estilos para heart y el commet */
+.heart-commet {
+  display: flex;
+  justify-content: space-around;
+  width: 412px;
+}
+
+.show-comment {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.not-like{
+  background-image: url('https://img.icons8.com/ios/50/000000/like.png');
+    background-size: cover;
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 30%;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+.liked{
+  background-image: url('https://img.icons8.com/officel/16/000000/hearts.png');
+  background-size: cover;
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 30%;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+/* .far fa-heart, .not-like {
+  content: "\f004";
+  color: red;
+  font-weight: 600;
+  font-size: 18px
+}
+
+.fas fa-heart, .liked {
+  content: "\f004";
+  color: red;
+  font-weight: 600;
+  font-size: 18px;
+} */
+
+.fa.fa-comment-o:before {
+  content: "\f075";
+  font-weight: 600;
+  color: blue;
+  font-size: 18px;
+}
+
+/* Profile */
+.edit-profile {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.user-img {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-view {
+  display: grid;
+  justify-content: center;
+}
+
+.botones {
+  border-radius: 40%;
+  width: 40px;
+}
+
+/* Pagina de error */
+
+.contenedor-Error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.error-page {
+  border: 1px solid black;
+}
+
+.error-400, .not-found {
+  display: flex;
+  justify-content: center;
+}
+
+.img-err {
+  display: flex;
+  justify-content: center;
+}
+
+/* Modales */
+
+.modal-container {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: grid;
+  justify-items: center;
+  width: 360px;
+  height: 140px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  transform: translateY(0%);
+  transition: transform 1s;
+}
+
+.yes, .no {
+  width: 41px;
+  background: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  padding: 4px 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.modal-close {
+  transform: translateY(-200%);
+}
+
+.close-estatistics {
+  background: white;
+  height: 28px;
+  width: 360px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1280px) {
+  .user-perfil {
+    width: 100%;
+    margin-left: -40px;
+  }
+  .content-general {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .side {
+    display: none;
+  }
+  .container-perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-perfil {
+    width: 100%;
+    margin-left: 0px;
+    height: 100%;
+  }
+  .flex-bottom-form {
+    width: 100%;
+    padding-left: 10%;
+  }
+  .section-post {
+    width: 116%;
+    margin-left: -10%;
+  }
+  .textArea-comment {
+    width: 110%
+  }
+  .textarea-post {
+    width: 60%;
+    margin-left: -53px;
+  }
+  .img-perfil2 {
+    width: 100%;
+    margin-left: 30px;
+  }
+  .img-perfil3 {
+    width: 80%;
+    height: 80%;
+  }
+  .content-post {
+    width: 123%;
+    margin-left: -14%;
+    margin-right: -45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .side {
+    display: none;
+  }
+  .container-perfil {
+    display: flex;
+    flex-direction: column;
+  }
+  .user-perfil {
+    width: 100%;
+    margin-left: 0px;
+    height: 100%;
+  }
+  .content-post {
+    width: 189%;
+    margin-left: -54%;
+    margin-right: -65%;
+  }
+  .textArea-comment {
+    width: 100%
+  }
+  .textarea-post {
+    width: 60%;
+    margin-left: -53px;
+  }
+  .img-perfil3 {
+    width: 50%;
+    height: 50%;
+  }
+  .section-post {
+    width: 186%;
+    margin-left: -50%;
+    margin-right: -40%;
+  }
+  .heart-commet {
+    width: 390px;
+  }
+}
